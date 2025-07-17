@@ -1,0 +1,23 @@
+# Patika.dev_VeriProje1
+
+[22,27,16,2,18,6]-> Insertion Sort
+ 
+1)Yukarıda verilen dizinin sort türüne göre aşamalarını yazınız.
+ 0-->       [22, 27, 16, 2, 18, 6]         // Başlangıç
+ 1-->       [22, 27, 16, 2, 18, 6]         // 27 yerinde kaldı
+ 2-->       [16, 22, 27, 2, 18, 6]         // 16, 22 ve 27’yi geçti
+ 3-->       [2, 16, 22, 27, 18, 6]         // 2, en başa yerleşti
+ 4-->       [2, 16, 18, 22, 27, 6]         // 18, 22 ve 27’nin önüne geçti
+ 5-->       [2, 6, 16, 18, 22, 27]         // 6, 16’dan küçük → 2’den sonra girdi
+
+2)Durum	Zaman Karmaşıklığı	Açıklama
+Best Case:	O(n)	Dizi zaten sıralıysa, her eleman yalnızca 1 kez karşılaştırılır.
+Avarage Case:	O(n²)	Elemanlar karışık ise, her yeni elemanla karşılaştırma yapılır.
+Worst Case:	O(n²)	Dizi ters sıralıysa, her yeni eleman tüm önceki elemanlarla karşılaştırılır ve kaydırma olur.
+
+3)Adım	İşlem Yapılan Dizi	Açıklama
+0--> [7, 3, 5, 8, 2, 9, 4, 15, 6]	Başlangıç durumu
+1--> [2, 3, 5, 8, 7, 9, 4, 15, 6]	2 (min) bulundu, 7 ile yer değiştirildi
+2--> [2, 3, 5, 8, 7, 9, 4, 15, 6]	3 zaten doğru yerde → değişiklik yok
+3--> [2, 3, 4, 8, 7, 9, 5, 15, 6]	4 (min) bulundu, 5 ile yer değiştirildi
+4--> [2, 3, 4, 5, 7, 9, 8, 15, 6]	5 (min) bulundu, 8 ile yer değiştirildi
